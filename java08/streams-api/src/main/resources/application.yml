@@ -6,4 +6,11 @@ spring:
     password: 
   h2: 
     console: 
-      enabled: true 
+      enabled: true
+mybatis:
+  type-aliases-package: com.example.finance.model
+  mapper-locations: classpath:mapper/*.xml
+
+strategy:
+  matrix:
+    java: [ 8, 17 ]
