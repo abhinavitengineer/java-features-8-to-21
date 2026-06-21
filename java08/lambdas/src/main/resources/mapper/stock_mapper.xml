@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- StockMapper.xml -->
+<mapper namespace="com.example.finance.mapper.StockMapper">
+    <resultMap id="StockResult" type="com.example.finance.model.Stock">
+        <id property="id" column="id"/>
+        <result property="symbol" column="symbol"/>
+        <result property="sector" column="sector"/>
+        <result property="price" column="price"/>
+        <result property="marketCap" column="market_cap"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="StockResult">
+        SELECT * FROM stocks
+    </select>
+</mapper>
