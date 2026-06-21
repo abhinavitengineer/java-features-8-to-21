@@ -29,6 +29,6 @@ public class TransactionService {
     public List<Transaction> suspiciousTransactions(double threshold) {
         return mapper.findAll().stream()
                 .filter(t -> t.getAmount() > threshold)
-                .collect(Collectors.toList());
+                .toList();
     }
 }
