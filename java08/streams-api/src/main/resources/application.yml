@@ -14,3 +14,7 @@ mybatis:
 strategy:
   matrix:
     java: [ 8, 17 ]
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
