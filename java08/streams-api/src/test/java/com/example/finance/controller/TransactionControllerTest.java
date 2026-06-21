@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(
         classes = com.example.finance.StreamsApiApplication.class)
-@AutoConfigureMockMvc(addFilters = false)
+@AutoConfigureMockMvc()
 public class TransactionControllerTest {
 
     @Autowired
